@@ -78,7 +78,7 @@ Map {
   }
   ::shadow2[zoom>=18] {
     line-pattern-file:url(img/line_shade_22.png);
-    line-pattern-geometry-transform:translate(10,50);
+    line-pattern-geometry-transform:translate(0,2);
   }
   ::fill[zoom>=15][zoom<=20] {
     polygon-pattern-file:url(img/shade_light.png);
