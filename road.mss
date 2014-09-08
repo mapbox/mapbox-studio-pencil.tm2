@@ -13,29 +13,23 @@
       b/line-width:0.8;
       b/line-opacity:0.2;
       b/line-dasharray:12,1;
-      c/line-width:1;
-      c/line-opacity:0.2;
-      c/line-dasharray:20,3;
       [zoom>=9] {
         a/line-opacity:0.1;
         b/line-opacity:0.1;
-        c/line-opacity:0.1;
       }
       [zoom>=8] {
         a/line-width:1;
         b/line-width:1.2;
-        c/line-width:1.5;
       }
       [zoom>=10] {
         a/line-width:1.6;
         b/line-width:2.0;
-        c/line-width:2.6;
       }
     }
     [zoom=12] { line-pattern-file:url(img/line_solid_7.png); }
   }
   [class='motorway_link'],
-    [class='main'] {
+  [class='main'] {
     [zoom>=7][zoom<=11] {
       a/line-color: #222;
       a/line-opacity: 0.25;
@@ -46,10 +40,10 @@
       [zoom=11] { a/line-width: 1.2; }
     }
     [zoom=12] { line-pattern-file:url(img/line_solid_6.png); }
-    [zoom=13] { line-pattern-file:url(img/line_solid_6.png); }
+    [zoom=13] { line-pattern-file:url(img/line_solid_7.png); }
   }
   [class='street'],
-    [class='street_limited'] {
+  [class='street_limited'] {
     [zoom=12] {
       a/line-width:1.5;
       a/line-opacity:0.05;
@@ -57,9 +51,6 @@
       b/line-width:1.2;
       b/line-opacity:0.05;
       b/line-dasharray:12,1;
-      c/line-width:1;
-      c/line-opacity:0.05;
-      c/line-dasharray:20,3;
     }
     [zoom=13] { line-pattern-file:url(img/line_solid_6.png); }
     [zoom=14] { line-pattern-file:url(img/line_solid_6.png); }
@@ -87,7 +78,9 @@
   }
 }
 
-#road::case, #bridge::case, #tunnel::case {
+#road::case,
+#bridge::case,
+#tunnel::case {
   ['mapnik::geometry_type'=2][zoom>=13][zoom<=20] {
     [class='motorway'] {
       [zoom=13] { line-pattern-file:url(img/line_double_14.png); }
@@ -118,7 +111,8 @@
   marker-line-width: 1.5;
 }
 
-#road::fill, #bridge::fill {
+#road::fill,
+#bridge::fill {
   ['mapnik::geometry_type'=2][zoom>=13][zoom<=20] {
     [class='motorway'] {
       [zoom=13] { line-pattern-file:url(img/line_double_14_mask.png); }

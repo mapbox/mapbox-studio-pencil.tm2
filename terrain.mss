@@ -1,4 +1,5 @@
 #hillshade {
+  opacity: 0.5;
   [class='medium_shadow'] {
     polygon-pattern-file:url(img/shade_medium.png);
     polygon-pattern-comp-op: multiply;
