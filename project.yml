@@ -1,16 +1,16 @@
-_prefs: 
-  saveCenter: true
+_prefs:
+  saveCenter: false
 _properties: {}
 attribution: "<a href='http://mapbox.com/about/maps' target='_blank'>Terms & Feedback</a>"
-bounds: 
+bounds:
   - -180
   - -85.0511
   - 180
   - 85.0511
-center: 
-  - -0.18792629241949044
-  - 51.45521030137689
-  - 15
+center:
+  - 12.503868341445923
+  - 41.88701328987302
+  - 18
 description: A painstakingly hand-drawn representation of the entire world. 2B graphite on acid-free paper.
 format: "png8:m=h"
 interactivity_layer: ''
@@ -19,7 +19,7 @@ maxzoom: 21
 minzoom: 0
 name: Pencil
 source: "mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5,mapbox.mapbox-bathymetry-v1"
-styles: 
+styles:
   - style.mss
   - road.mss
   - terrain.mss
