@@ -12,18 +12,18 @@ Map {
   // The ::dark and ::light attachments create a subtle inner-
   // shadow on water bodies for added contrast.
   ::dark { polygon-fill: #aaa; }
-  ::light14[zoom<=14],
-  ::light15[zoom=15],
-  ::light16[zoom=16],
-  ::light17[zoom>=17] {
+  ::light14[zoom<=15],
+  ::light15[zoom=16],
+  ::light16[zoom=17],
+  ::light17[zoom>=18] {
     polygon-fill: #fff;
     polygon-gamma: 0.5;
     image-filters: agg-stack-blur(8,8);
     image-filters-inflate: true;
   }
-  ::light15[zoom=15] { image-filters: agg-stack-blur(16,16); }
-  ::light16[zoom=16] { image-filters: agg-stack-blur(32,32); }
-  ::light17[zoom<=17] { image-filters: agg-stack-blur(64,64); }
+  ::light15[zoom=16] { image-filters: agg-stack-blur(16,16); }
+  ::light16[zoom=17] { image-filters: agg-stack-blur(32,32); }
+  ::light17[zoom>=18] { image-filters: agg-stack-blur(64,64); }
   // Pencil shading texture:
   ::texture {
     comp-op: multiply;
