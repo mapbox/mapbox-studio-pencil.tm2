@@ -1,6 +1,6 @@
 {
     "name": "mapbox-studio-pencil",
-    "version": "3.0.0",
+    "version": "3.0.2",
     "description": "Pencil style for Mapbox Studio.",
     "main": "./package.json"
 }
