@@ -10,8 +10,8 @@
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">21</Parameter>
   <Parameter name="minzoom">0</Parameter>
-  <Parameter name="name"><![CDATA[Pencil]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6,mapbox.mapbox-bathymetry-v1]]></Parameter>
+  <Parameter name="name"><![CDATA[pencil-test]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6]]></Parameter>
 </Parameters>
 
 
@@ -19,21 +19,13 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Style name="hillshade" filter-mode="first" opacity="0.5">
+<Style name="hillshade" filter-mode="first" opacity="0.3">
   <Rule>
-    <Filter>([class] = 'full_highlight')</Filter>
-    <PolygonSymbolizer fill="rgba(255, 255, 255, 0.19999999999999996)" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'medium_highlight')</Filter>
+    <Filter>([class] = 'highlight')</Filter>
     <PolygonSymbolizer fill="rgba(255, 255, 255, 0.09999999999999998)" />
   </Rule>
   <Rule>
-    <Filter>([class] = 'full_shadow')</Filter>
-    <PolygonPatternSymbolizer file="img/shade_medium.png" comp-op="multiply" />
-  </Rule>
-  <Rule>
-    <Filter>([class] = 'medium_shadow')</Filter>
+    <Filter>([class] = 'shadow')</Filter>
     <PolygonPatternSymbolizer file="img/shade_medium.png" comp-op="multiply" />
   </Rule>
 </Style>
@@ -1449,10 +1441,6 @@
       </Layer>
 
 <Layer name="housenum_label"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
-
-<Layer name="bathymetry"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
