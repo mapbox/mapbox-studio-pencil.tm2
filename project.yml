@@ -18,7 +18,7 @@ layers: null
 maxzoom: 21
 minzoom: 0
 name: Pencil
-source: "mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6,mapbox.mapbox-bathymetry-v1"
+source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6"
 styles: 
   - style.mss
   - road.mss
