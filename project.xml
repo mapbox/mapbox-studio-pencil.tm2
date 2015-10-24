@@ -10,7 +10,7 @@
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">21</Parameter>
   <Parameter name="minzoom">0</Parameter>
-  <Parameter name="name"><![CDATA[Pencil]]></Parameter>
+  <Parameter name="name"><![CDATA[pencil-test]]></Parameter>
   <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6]]></Parameter>
 </Parameters>
 
@@ -19,7 +19,7 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Style name="hillshade" filter-mode="first" opacity="0.4">
+<Style name="hillshade" filter-mode="first" opacity="0.3">
   <Rule>
     <Filter>([class] = 'highlight')</Filter>
     <PolygonSymbolizer fill="rgba(255, 255, 255, 0.09999999999999998)" />
