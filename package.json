@@ -2,5 +2,9 @@
   "name": "@mapbox/mapbox-studio-pencil",
   "version": "3.0.5",
   "description": "Pencil style for Mapbox Studio.",
-  "main": "./package.json"
+  "main": "./package.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapbox/mapbox-studio-pencil.tm2.git"
+  }
 }
